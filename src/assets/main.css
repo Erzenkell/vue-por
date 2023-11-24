@@ -1,8 +1,6 @@
 @import './base.css';
 
 #app {
-  max-width: 99vw;
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -18,9 +16,5 @@ a {
   body {
     display: flex;
     place-items: center;
-  }
-
-  #app {
-    padding: 0 2rem;
   }
 }

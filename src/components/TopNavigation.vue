@@ -36,7 +36,7 @@
     .header-wrapper {
         color: var(--color-primary);
         width: 100vw;
-        padding: 1rem;
+        padding: 2rem;
         display: flex;
         flex-direction: row;
     }

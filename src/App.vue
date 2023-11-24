@@ -8,7 +8,7 @@ import FooterNavigaton from './components/FooterNavigaton.vue'
   <header>
     <TopNavigation />
   </header>
-  <RouterView />
+    <RouterView />
   <footer>
     <FooterNavigaton />
   </footer>
@@ -42,7 +42,6 @@ header {
     margin-left: -1rem;
     font-size: 1rem;
 
-    padding: 1rem 0;
     margin-top: 1rem;
   }
 }

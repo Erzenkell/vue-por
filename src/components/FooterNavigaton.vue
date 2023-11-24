@@ -32,6 +32,7 @@
         justify-content: center;
         align-items: center;
         color: var(--color-text);
+        border-top: 1px solid var(--color-text);
     }
 
     .footer-content {
