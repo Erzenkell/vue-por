@@ -1,0 +1,26 @@
+@import './base.css';
+
+#app {
+  max-width: 99vw;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: hsla(var(--color-primary), 0.8);
+  transition: 0.4s;
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}
