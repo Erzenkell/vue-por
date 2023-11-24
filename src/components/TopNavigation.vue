@@ -15,6 +15,10 @@
             link: '/back'
         },
         {
+            name: 'Projects',
+            link: '/projects'
+        },
+        {
             name: 'Contact',
             link: '/contact'
         },

@@ -1,19 +1,27 @@
 <script setup>
+  import { ref, onMounted } from 'vue'
+
+  const circleCircumference = ref(251.327) // Circonférence d'un cercle de rayon 40
+  const strokeDashOffset = ref(circleCircumference.value)
+
+  onMounted(() => {
+    // Reset stroke-dashoffset to initiate the animation
+    strokeDashOffset.value = circleCircumference.value
+  })
 </script>
 
 <template>
     <div class="home-wrapper">
       <div class="img-wrapper">
-        <img src="../assets/kirbok.jpg" alt="Ferrier Sammy" />
+          <img src="../assets/kirbok.jpg" alt="Ferrier Sammy" />
       </div>
       <div class="content-wrapper">
         <h2>Fullstack Developer</h2>
         <h1>Sammy Ferrier</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          voluptatum, quibusdam, quia, voluptate quod quos voluptas dolorum
-          voluptatibus quae quas natus. Quisquam voluptatum, quibusdam, quia,
-          voluptate quod quos voluptas dolorum voluptatibus quae quas natus.
+          I'm a Front-end Web Developer with expertise of React.js, Vue.js, Javascript, HTML and CSS.<br/>
+          Fresh graduate of a bachelor degree in web development at HETIC. I'm looking for a web developer job.<br/>
+          This portfolio is still in development and is mainly used as a way for me to test different React librairies and features but also to show my work.<br/>
         </p>
         <button>Contact</button>
       </div>
@@ -35,9 +43,20 @@
     margin-right: 50px;
   }
   .img-wrapper img{
-    border: 10px solid var(--color-primary);
+    /* border: 10px solid var(--color-primary);  */
     border-radius: 50%;
     max-width: 450px;
+    animation: fillBorder 1s linear;
+    animation-fill-mode: forwards;  
+  }
+
+  @keyframes fillBorder {
+    0% {
+      border: 10px solid transparent;
+    }
+    100% {
+      border: 10px solid var(--color-primary);
+    }
   }
 
   .content-wrapper {

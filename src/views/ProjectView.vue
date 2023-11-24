@@ -1,44 +1,27 @@
 <script setup>
-  import TextArea from '../components/TextArea.vue'
-
-  const infos = [
-    {
-      title: 'Email',
-      text: 'ferrier.sammy@gmail.com',
-    },
-    {
-      title: 'Phone',
-      text: '+33 6 95 52 35 84',
-    },
-    {
-      title: 'Address',
-      text: 'Paris, France',
-    },
-  ]
 </script>
 
 <template>
-  <div class="contact-wrapper">
+  <div class="project-wrapper">
     <div class="title">
-      <h1>Contact</h1>
+      <h1>Projects</h1>
     </div>
     <div class="content-wrapper">
       <div class="text-wrapper">
-        <TextArea v-for="info in infos" :key="info.title" :title="info.title" :text="info.text" />
       </div>
     </div>
   </div>
 </template>
 
 <style>
-  .contact-wrapper {
+  .project-wrapper {
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-wrapper h1 {
+  .project-wrapper h1 {
     color: var(--color-text-white);
   }
 

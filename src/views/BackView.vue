@@ -28,7 +28,7 @@
       <h1>Back-end skills</h1>
     </div>
     <div class="content-wrapper">
-      <div>
+      <div class="text-wrapper">
         <TextArea v-for="skill in skills" :key="skill.name" :title="skill.name" :text="skill.text" />
       </div>
       <div class="bar-wrapper">
@@ -45,6 +45,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .backend-wrapper h1 {
+    color: var(--color-text-white);
   }
 
   .title {
@@ -70,8 +74,12 @@
     width: 100%;
   }
 
+  .text-wrapper {
+    width: 100%;
+    max-width: 50vw;
+  }
   .bar-wrapper {
     width: 100%;
-    max-width: 400px;
+    max-width: 30vw;
   }
 </style>
