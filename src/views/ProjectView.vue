@@ -28,7 +28,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
   .project-wrapper {
     height: 100vh;
     display: flex;
