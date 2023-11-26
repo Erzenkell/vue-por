@@ -1,5 +1,6 @@
 <script setup>
   import { ref, onMounted } from 'vue'
+  import { RouterLink } from 'vue-router' 
 
   const circleCircumference = ref(251.327) // Circonférence d'un cercle de rayon 40
   const strokeDashOffset = ref(circleCircumference.value)
@@ -21,9 +22,11 @@
         <p>
           I'm a Front-end Web Developer with expertise of React.js, Vue.js, Javascript, HTML and CSS.<br/>
           Fresh graduate of a bachelor degree in web development at HETIC. I'm looking for a web developer job.<br/>
-          This portfolio is still in development and is mainly used as a way for me to test different React librairies and features but also to show my work.<br/>
+          This portfolio is still in development and is mainly used as a way for me to test different librairies and features but also to show my work.<br/>
         </p>
-        <button>Contact</button>
+        <RouterLink to="/contact">
+          <button>Contact</button>
+        </RouterLink>
       </div>
     </div>
 </template>

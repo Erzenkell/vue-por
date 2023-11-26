@@ -1,7 +1,10 @@
 <script setup>
-  import TextArea from '../components/TextArea.vue'
-  import emailjs from 'emailjs-com'
   import { ref } from 'vue'
+  import emailjs from 'emailjs-com'
+
+  import TextArea from '../components/TextArea.vue'
+  import Toaster from "../components/ToastComponent.vue";
+  import useToasterStore from "../store/useToasterStore";
 
   const name = ref('')
   const email = ref('')
@@ -22,8 +25,16 @@
     },
   ]
 
-  function sendEmail(e) {
+  const toasterStore = useToasterStore();
+
+  const sendToast = (message) => toasterStore.addToast({ message: message });
+
+  const sendEmail = (e) => {
     e.preventDefault();
+    if (!name.value || !email.value || !message.value) {
+      sendToast('Please fill all fields')
+      return
+    }
     try {
       emailjs.sendForm('vue_portfolio', 'default_template', e.target, 'nn440ZpSh-kfgyIX6', {
         name: name,
@@ -31,8 +42,9 @@
         message: message,
       })
     } catch (error) {
-      console.log(error)
+      sendToast('Error sending email')
     }
+    sendToast('Email sent')
     name.value = ''
     email.value = ''
     message.value = ''
@@ -40,6 +52,7 @@
 </script>
 
 <template>
+  <Toaster />
   <div class="contact-wrapper">
     <div class="title">
       <h1>Contact</h1>
