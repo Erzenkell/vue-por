@@ -8,16 +8,19 @@
       name: "Node.js",
       text: "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.",
       percentage: 80,
+      icon: "pen",
     },
     {
       name: "Python",
       text: "Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation.",
       percentage: 70,
+      icon: "screen",
     },
     {
       name: "PHP",
       text: "PHP is a general-purpose scripting language especially suited to web development. It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994.",
       percentage: 60,
+      icon: "tel",
     }
   ])
 </script>
@@ -29,7 +32,7 @@
     </div>
     <div class="content-wrapper">
       <div class="text-wrapper">
-        <TextArea v-for="skill in skills" :key="skill.name" :title="skill.name" :text="skill.text" />
+        <TextArea v-for="skill in skills" :key="skill.name" :title="skill.name" :text="skill.text" :icon="skill.icon"/>
       </div>
       <div class="bar-wrapper">
         <h2>Coding Skills</h2>

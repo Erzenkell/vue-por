@@ -14,14 +14,17 @@
     {
       title: 'Email',
       text: 'ferrier.sammy@gmail.com',
+      icon: 'mail',
     },
     {
       title: 'Phone',
       text: '+33 6 95 52 35 84',
+      icon: 'tel',
     },
     {
       title: 'Address',
       text: 'Paris, France',
+      icon: 'marker',
     },
   ]
 
@@ -60,7 +63,7 @@
     <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.106821192802!2d2.4217424820284204!3d48.84111587381549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673bcde27dc83%3A0x6f45cb47abc9667d!2sLac%20de%20Saint-Mand%C3%A9!5e0!3m2!1sfr!2sfr!4v1700929792521!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div class="content-wrapper">
       <div class="text-wrapper">
-        <TextArea v-for="info in infos" :key="info.title" :title="info.title" :text="info.text" />
+        <TextArea v-for="info in infos" :key="info.title" :title="info.title" :text="info.text" :icon="info.icon" />
       </div>
       <div class="contact-field-wrapper">
         <form class="contact-form" @submit="e => sendEmail(e)">

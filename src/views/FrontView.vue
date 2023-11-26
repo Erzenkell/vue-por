@@ -8,26 +8,31 @@
       name: "HTML",
       text: "HTML is the standard markup language for Web pages. With HTML you can create your own Website.",
       percentage: 100,
+      icon: "screen",
     },
     {
       name: "CSS",
       text: "CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed.",
       percentage: 70,
+      icon: "pen",
     },
     {
       name: "JavaScript",
       text: "JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web.",
       percentage: 80,
+      icon: "tel",
     },
     {
       name: "React",
       text: "React is a JavaScript library for building user interfaces. React makes it painless to create interactive UIs.",
       percentage: 80,
+      icon: "screen",
     },
     {
       name: "Vue",
       text: "Vue is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.",
       percentage: 60,
+      icon: "pen",
     },
   ])
 </script>
@@ -39,7 +44,7 @@
     </div>
     <div class="content-wrapper">
       <div class="text-wrapper">
-        <TextArea v-for="skill in skills" :key="skill.name" :title="skill.name" :text="skill.text" />
+        <TextArea v-for="skill in skills" :key="skill.name" :title="skill.name" :text="skill.text" :icon="skill.icon" />
       </div>
       <div class="bar-wrapper">
         <h2>Coding Skills</h2>
