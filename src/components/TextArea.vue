@@ -16,7 +16,7 @@
 
 <template>
     <div class="textarea">
-        <img :src="`../src/assets/icons/${icon}.svg`" class="icon">
+        <img :src="`/assets/icons/${icon}.svg`" class="icon">
         <div>
             <h2>{{ title }}</h2>
             <p>{{ text }}</p>

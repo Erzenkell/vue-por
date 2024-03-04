@@ -14,7 +14,7 @@
 <template>
     <div class="home-wrapper">
       <div class="img-wrapper">
-          <img src="../assets/photo_alacon2.png" alt="Ferrier Sammy" />
+          <img src="/assets/photo_alacon2.png" alt="Ferrier Sammy" />
       </div>
       <div class="content-wrapper">
         <h2>Fullstack Developer</h2>
