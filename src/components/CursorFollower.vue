@@ -7,7 +7,7 @@ export default {
       followerPosX: 0,
       followerPosY: 0,
       frame: 0,
-      frameSrc: ("./assets/follower/kirb/frame-0.jpg"),
+      frameSrc: ("public/assets/follower/kirb/frame-0.jpg"),
       step: 0,
       moved: true,
       mirrored: 1,
@@ -51,7 +51,7 @@ export default {
           this.moved = false;
         }
       }
-      this.frameSrc = (`./assets/follower/kirb/frame-${this.frame}.jpg`);
+      this.frameSrc = (`public/assets/follower/kirb/frame-${this.frame}.jpg`);
     },
   },
 };
