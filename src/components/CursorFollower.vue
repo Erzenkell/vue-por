@@ -7,7 +7,7 @@ export default {
       followerPosX: 0,
       followerPosY: 0,
       frame: 0,
-      frameSrc: ("src/assets/follower/kirb/frame-0.jpg"),
+      frameSrc: ("../assets/follower/kirb/frame-0.jpg"),
       step: 0,
       moved: true,
       mirrored: 1,
