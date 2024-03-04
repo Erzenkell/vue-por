@@ -28,7 +28,7 @@
 <template>
     <div class="header-wrapper">
         <RouterLink to="/">
-            <img class="logo" src="/assets/logo.jpg" alt="Logo" />
+            <img class="logo" src="./assets/logo.jpg" alt="Logo" />
         </RouterLink>
         <nav>
             <RouterLink v-for="page in pages" :key="page.name" :to="page.link">
