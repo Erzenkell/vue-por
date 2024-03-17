@@ -3,17 +3,17 @@
     import { ref } from 'vue';
     const slides = ref([
         {
-            image: 'public/assets/projects/project-academy.png',
+            image: '/assets/projects/project-academy.png',
             alt: 'First slide',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
         },
         {
-            image: 'public/assets/projects/project-discord.png',
+            image: '/assets/projects/project-discord.png',
             alt: 'Second slide',
             text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum',
         },
         {
-            image: 'public/assets/projects/project-whogotnext.png',
+            image: '/assets/projects/project-whogotnext.png',
             alt: 'Third slide',
             text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo',
         },
